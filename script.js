@@ -570,7 +570,7 @@ function makePistilColor(shellColor) {
 }
 
 // Unique shell types
-const crysanthemumShell = (size=1) => {
+const crysanthemumShell = (size=2) => {
   const glitter = Math.random() < 0.25;
   const singleColor = Math.random() < 0.72;
   const color = singleColor ? randomColor({ limitWhite: true }) : [randomColor(), randomColor({ notSame: true })];
